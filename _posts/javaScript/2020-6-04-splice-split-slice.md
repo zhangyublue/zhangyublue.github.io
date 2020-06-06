@@ -50,16 +50,16 @@ published:     true
 
 ### splice的用法
 
-1. 添加  从第 2 位开始删除 0 个元素，插入"drum"
+- 添加  从第 2 位开始删除 0 个元素，插入"drum"
 
 ```javascript
 let myFish = ["angel", "clown", "mandarin", "sturgeon"];
 let removed = myFish.splice(2, 0, "drum");
 ```
 
-2. 删除
+- 删除
 
-- 从第 3 位开始删除 1 个元素
+    - 从第 3 位开始删除 1 个元素
 
 ```javascript
 let myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
@@ -68,7 +68,8 @@ let removed = myFish.splice(3, 1);
 // 运算后的 myFish: ["angel", "clown", "drum", "sturgeon"]
 // 被删除的元素: ["mandarin"]
 ```
-- 从第 2 位开始删除 2 个元素，插入“trumpet”
+
+    - 从第 2 位开始删除 2 个元素，插入“trumpet”
 
 ```javascript
 var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
@@ -78,7 +79,7 @@ var removed = myFish.splice(2, 1, "trumpet");
 // 被删除的元素: ["drum", "sturgeon"]
 ```
 
-3. 替换 替换就是deleteCount为添加的item1，item2...的长度，其实是删除了item相同长度的元素然后插入了item1，item2...效果就等同于替换了
+- 替换 替换就是deleteCount为添加的item1，item2...的长度，其实是删除了item相同长度的元素然后插入了item1，item2...效果就等同于替换了
 
 ```javascript
 var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
